@@ -1,0 +1,22 @@
+.week {
+    color: white;
+    margin-top: 25px;
+    display: flex;
+    border: 1px solid white;
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    width: 957px;
+    height: 30px;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    /* border: 1px solid black; */
+    width: 137.142px;
+    padding-right: 5px;
+    margin: 0px;
+    font-size: 1.5em;
+}

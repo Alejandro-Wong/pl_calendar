@@ -1,0 +1,31 @@
+.day {
+    border: 1px solid darkgray;
+    width: 137.14px;
+    height: 137.14px;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.index {
+    float: right;
+    color: red;
+    display: none;
+}
+
+.dayNum {
+    float: left;
+    padding-left: 5px;
+}
+
+.date {
+    margin-top: 60px;
+    display: none;
+}
+
+.plData {
+    color: white;
+    margin-left: 45px;
+    margin-top: 55px;
+    /* border: 1px solid black; */
+}

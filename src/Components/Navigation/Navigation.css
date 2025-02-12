@@ -1,0 +1,16 @@
+.navButton {
+    width: 100px;
+    height: 25px;
+    border: none;
+    color: white;
+    background-color: gray;
+    border-radius: 10px;
+}
+
+#prev {
+    margin-right: 10px;
+}
+
+#next {
+    margin-right: 1px;
+}

@@ -1,0 +1,17 @@
+html {
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  opacity: 0.85;
+}
+
+.App {
+  margin-top: 25px;
+  /* border: 1px solid black; */
+  height: fit-content;
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+

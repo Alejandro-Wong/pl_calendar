@@ -1,0 +1,14 @@
+.header {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+    /* border: 1px solid black; */
+    width: 960px;
+    /* margin-top: 25px; */
+}
+
+.todaysDate {
+    font-size: 2em;
+}
