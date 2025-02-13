@@ -54,7 +54,9 @@ def update_database():
 
 
     # Find difference between Profit/Loss DataFrame and Postgres DataFrame
-    diff = pd.concat([pl, pg_df]).drop_duplicates(keep=False).reset_index(drop=True)
+    diff = pd.merge(pg_df.tail(10), pl.tail(10), how='right', indicator=True)
+    diff = diff[diff['_merge'] == 'right_only']
+    diff = diff.drop(columns=['_merge']).reset_index(drop=True)
 
 
     # Append new entries to Postgres DataFrame
