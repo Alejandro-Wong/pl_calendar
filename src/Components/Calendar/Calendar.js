@@ -41,7 +41,6 @@ function Calendar({ monthIdx, yearIdx, plData }) {
   for (let i=0; i<days.length; i++) {
     let date = days[i] ? new Date(year,month,days[i]).toISOString().split('T')[0] : ''
     let pl = Number(plObj[date]);
-    console.log(typeof pl)
     calDays.push(<Day index={i} dayNum={days[i]} date={date} currentDay={currentDay} plData={pl}/>);
   };
 
