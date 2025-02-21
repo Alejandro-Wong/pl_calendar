@@ -9,6 +9,15 @@
     /* margin-top: 25px; */
 }
 
-.todaysDate {
+/* .todaysDate {
     font-size: 2em;
+} */
+
+.totalPl {
+    font-size: 2em;
+    font-weight: 600;
+}
+
+#pl {
+    margin-left: 15px;
 }

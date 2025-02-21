@@ -56,11 +56,23 @@ function App() {
     setYearIdx(yearIdx + 1);
   }
 
+  // Total Month's PL for Header
+  const monthPl = [];
+  for (let i = 0; i < plData.length; i++) {
+    let month = new Date(plData[i].date).getMonth()
+    if (months[month] === currentMonth) {
+      monthPl.push(Number(plData[i].profit_loss))
+    };
+  };
+
+  const totalMonthPl = monthPl.reduce((b, a) => b + a, 0).toFixed(2)
+
   return (
     <div className="App">
       <Header 
         currentMonth={currentMonth}
         currentYear={currentYear}
+        totalMonthPl={totalMonthPl}
         todaysDate={todaysDate}
         monthIdx={monthIdx}
         setMonth={setMonthIdx}
