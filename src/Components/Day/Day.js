@@ -7,7 +7,7 @@ function Day({ index, dayNum, date, currentDay, plData}) {
                 "background-color": !dayNum ? 'gray' 
                                   : plData > 10 ? 'rgba(0, 255, 0, 0.2)' 
                                   : plData < -10 ? 'rgba(255, 0, 0, 0.2)' : '', 
-                opacity: !dayNum ? 0.55 : 1}}>
+                opacity: !dayNum ? 0.2 : 1}}>
       <div className="index">{index}</div>
       <div className="dayNum">{dayNum}</div>
       <div className="date">{date}</div>
