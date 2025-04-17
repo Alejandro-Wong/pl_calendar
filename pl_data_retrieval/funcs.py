@@ -119,13 +119,15 @@ def extract_orders(orders:list[dict]) -> pd.DataFrame:
                 other_dfs.append(extract_order_data(cos_layer2))
 
     # Combine other_dfs
-    spec_df = pd.concat(other_dfs)
+    if len(other_dfs) != 0:
+        spec_df = pd.concat(other_dfs)
+        # Combine main with spec
+        df = pd.concat([main_df, spec_df])
+        df = df.sort_values(by=['date','time'])
 
-    # Combine main with spec
-    df = pd.concat([main_df, spec_df])
-    df = df.sort_values(by=['date','time'])
+        return df
 
-    return df
+    return main_df
 
 
 
